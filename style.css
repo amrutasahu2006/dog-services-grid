@@ -4,6 +4,7 @@ body{
 
 #outermost-div{
     text-align: center;
+    margin-left: 10px;
 }
 
 #heading{
@@ -16,7 +17,6 @@ body{
     text-align: left;
     justify-content: center;
     margin-top: 40px;
-    margin-left: 40px;
 }
 
 .card{

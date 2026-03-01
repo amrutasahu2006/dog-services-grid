@@ -4,7 +4,6 @@ body{
 
 #outermost-div{
     text-align: center;
-    margin-left: 10px;
 }
 
 #heading{
@@ -13,14 +12,15 @@ body{
 
 #grid-div{
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    text-align: left;
+    grid-template-columns: repeat(3, 300px);
     justify-content: center;
     margin-top: 40px;
+    gap: 20px;   /* Better spacing */
 }
 
 .card{
-    width: 300px;
+    width: 100%;
+    text-align: left;
 }
 
 .paragraph{
@@ -40,12 +40,22 @@ body{
 
 @media (max-width: 900px){
     #grid-div{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
     }
 }
 
 @media (max-width: 600px){
     #grid-div{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 300px;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 300px){
+    #grid-div{
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
     }
 }
